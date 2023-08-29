@@ -1,0 +1,26 @@
+.shearchInput {
+    background-color: var(--bs-lightGray);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 44px;
+    padding: 0 1rem;
+    border-radius: 6px;
+
+    img {
+        width: 22px;
+        height: 22px;
+    }
+
+    input {
+        border: none;
+        outline: none;
+        background-color: var(--bs-lightGray);
+        width: 100%;
+
+        ::placeholder {
+            color: #787486;
+        }
+    }
+}

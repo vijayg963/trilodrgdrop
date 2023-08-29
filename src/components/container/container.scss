@@ -1,0 +1,167 @@
+@import '../../scss/mixin';
+
+.main_container {
+  width: 100%;
+
+  .menuBar {
+    .MuiDrawer-paper {
+      box-sizing: border-box;
+      width: size(250);
+      top: size(88);
+      height: 100%;
+      overflow: hidden;
+
+      @include for-medium-desktop {
+        width: size(250);
+      }
+
+      .MuiList-root {
+        overflow-x: hidden !important;
+        overflow: auto;
+
+        @include for-medium-desktop {
+        }
+      }
+    }
+  }
+
+  main {
+    min-height: calc(100vh - 88px);
+    padding-left: size(260);
+    margin-top: size(88);
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    @include transition(all 225ms cubic-bezier(0.4, 0, 0.6, 1) 0ms);
+
+    .rightContainer {
+      padding: 0 size(20);
+    }
+
+    @include for-medium-desktop {
+      padding-left: size(250);
+    }
+
+    @include for-medium-tablet {
+      padding-left: 6.25rem;
+    }
+
+    @include for-medium-tablet {
+      padding-left: size(20);
+    }
+
+    @media screen and (max-width: 576px) {
+      padding-left: size(15);
+    }
+  }
+
+  &.collapsed {
+    .MuiDrawer-root {
+      .nvBx {
+        .MuiTypography-subtitle2 {
+          opacity: 0;
+        }
+
+        .MuiListItemIcon-root {
+          margin-right: 0;
+        }
+
+        .nv_icon {
+          opacity: 0;
+        }
+      }
+
+      .MuiCollapse-entered {
+        display: none;
+      }
+
+      .MuiDrawer-paper {
+        @include for-medium-tablet {
+          width: 0;
+        }
+      }
+
+      .listContainer {
+        width: size(69);
+      }
+    }
+
+    .menuBar {
+      .MuiDrawer-paper {
+        width: size(70);
+
+        @media screen and (max-width: 992px) {
+          width: 0px;
+        }
+
+        &::before {
+          width: size(69);
+
+          @media screen and (max-width: 992px) {
+            width: 0px;
+          }
+        }
+      }
+    }
+
+    .ar_nv {
+      img {
+        transform: none;
+      }
+    }
+
+    main {
+      padding-left: size(70);
+      @include transition(all 195ms cubic-bezier(0.4, 0, 0.6, 1) 0ms);
+
+      @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+        padding-left: size(45);
+      }
+
+      @include for-medium-tablet {
+        // padding-left: size(20);
+        // padding-right: size(20);
+      }
+
+      @media screen and (max-width: 576px) {
+        // padding-left: size(15);
+        // padding-right: size(15);
+      }
+    }
+
+    .lg_wrap {
+      width: size(70);
+
+      a {
+        overflow: hidden;
+
+        .lgb {
+          opacity: 0;
+        }
+
+        .lgsm {
+          opacity: 1;
+        }
+      }
+    }
+
+    .navi_dp {
+      width: 70px;
+
+      .MuiTypography-subtitle2 {
+        display: none;
+      }
+
+      @include for-medium-tablet {
+        display: none !important;
+      }
+    }
+  }
+
+  .navi_dp {
+    @include for-medium-tablet {
+      display: block !important;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.cardHeading {
+  padding-right: 30px;
+  .headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .heading {
+    font-size: 46px;
+    font-weight: 600;
+  }
+  .avatarImg {
+    display: flex;
+  }
+  .avatar {
+    background-color: #f4d7da;
+  }
+  .headDiv {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  .avatarNum {
+    font-size: 10px;
+    color: #d25b68;
+  }
+  .gap {
+    display: flex;
+    gap: 10px;
+  }
+  .invite {
+    color: purple;
+  }
+
+  .flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .flex_sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .filter_sec {
+    width: 122px;
+    gap: 10px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #787486;
+    border-radius: 6px;
+  }
+  .share {
+    width: 97px;
+    height: 40px;
+    border: 1px solid #787486;
+    border-radius: 6px;
+  }
+  .todo_sec {
+    margin-top: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto auto auto;
+  }
+}

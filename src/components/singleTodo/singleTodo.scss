@@ -1,0 +1,72 @@
+.singleTodo {
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 20px;
+  max-width: 350px;
+
+  border-radius: 16px;
+  .todo_head {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 36px;
+    height: 23px;
+    background: rgba(223, 168, 116, 0.2);
+    border-radius: 4px;
+  }
+  .todoBox_heading {
+    border-radius: 5px;
+    margin-bottom: 8px;
+    font-family: "Inter";
+    padding: 4px;
+    font-size: 12px;
+    color: #d58d49;
+    background-color: #f9eee3;
+  }
+  .flex {
+    display: flex;
+    gap: 0;
+  }
+
+  .imgCenter {
+    img {
+      margin: 5px;
+    }
+    text-align: center;
+  }
+  .subHeading {
+    margin-bottom: 8px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+    color: #0d062d;
+  }
+  .para {
+    font-family: "Inter";
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #787486;
+  }
+  .common_box {
+    bottom: 0;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    color: #787486;
+    font-size: 12px;
+  }
+
+  .comment_sec {
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .profile_sec {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

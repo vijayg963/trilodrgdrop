@@ -1,0 +1,23 @@
+[
+  {
+    "todo": "To Do",
+    "status": "todo",
+    "number": "4",
+    "border": "3px solid blue",
+    "background": "#5030E5"
+  },
+  {
+    "todo": "On Progress",
+    "status": "onProgress",
+    "number": "3",
+    "border": "3px solid #FFA500",
+    "background": "#FFA500"
+  },
+  {
+    "todo": "Done",
+    "status": "done",
+    "number": "2",
+    "border": "3px solid #8BC48A",
+    "background": "#76A5EA"
+  }
+]

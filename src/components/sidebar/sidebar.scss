@@ -1,0 +1,168 @@
+@import '../../scss/mixin';
+
+.listContainer {
+  position: relative;
+  overflow: scroll;
+  margin-bottom: 40px;
+
+  .writeMsg {
+    padding: 10px;
+    text-align: center;
+    width: 206px;
+    height: 200px;
+    background: #f5f5f5;
+    border-radius: 16px;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+
+  .circleBox {
+    background: #c4c4c4;
+    position: absolute;
+    bottom: 50px;
+    left: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    background-color: #ebe8e8;
+  }
+  .inputBox {
+    font-weight: 500;
+    font-size: 14px;
+    width: 166px;
+    height: 40px;
+    border: none;
+    background: #ffffff;
+    border-radius: 4px;
+  }
+  .h5 {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .msg_para {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 0;
+    margin: 0 22px;
+    border-bottom: 1px solid var(--bs-borderColor);
+
+    .active {
+      background-color: rgba($color: lightGray, $alpha: 0.8);
+      border-radius: 6px;
+
+      li {
+        color: black;
+        font-weight: 600;
+        font-size: 12px;
+      }
+    }
+
+    .listItem {
+      min-width: auto;
+      padding: 0.8rem 0;
+      display: flex;
+      align-items: center;
+      color: var(--bs-subHeading);
+      font-weight: 500;
+      position: relative;
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+
+      span {
+        display: inline-block;
+        margin-right: 1rem;
+        height: 24px;
+        width: 24px;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      // @include for-medium-desktop {
+      //   width: 26px;
+      //   height: 26px;
+      // }
+
+      // @include for-medium-tablet {
+      //   width: 22px;
+      //   height: 22px;
+      // }
+
+      @include for-mobile-device {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  }
+
+  .nvBx {
+    display: block;
+    height: 52px;
+    padding: 0 22px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    gap: 16px;
+
+    .rightArrowIcon {
+      width: 16px;
+      position: absolute;
+      right: 22px;
+    }
+
+    .nv_icon {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+  }
+
+  .projects {
+    padding: 22px 0;
+
+    ul {
+      padding: 22px 0;
+      margin: 0 10px;
+      border: none;
+
+      .listItem {
+        padding: 12px;
+      }
+    }
+
+    .menuDot {
+      position: absolute;
+      right: 0;
+    }
+
+    .projectHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 22px;
+
+      h4 {
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--bs-subHeading);
+      }
+    }
+  }
+}
